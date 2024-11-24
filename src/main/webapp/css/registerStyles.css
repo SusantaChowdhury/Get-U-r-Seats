@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+
+body{
+	display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../img/reel.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+	width: 100%;
+	position: relative;
+	background-color: #1d2023;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.navbar .logo h1 {
+	color: white;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.card-body {
+	position: relative;
+	top: 10%;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+}
+
+.card-header, .card-footer {
+	color: #fff;
+	width: 100%;
+	background-color: #1d2023c6;
+}
+
+small a {
+	color: rgb(217, 212, 212);
+	text-decoration: none;
+}
+
+.registrationError p{
+	text-align: center;
+	color: #0e00ff;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	backdrop-filter: blur(15px);
+	align-items: center;
+	width: 500px;
+	height: auto;
+	border: 1px solid rgba(255, 255, 255, 0.27);
+	border-radius: 10px;
+	position: relative;
+	transition: 0.3s all;
+	top: 50px;
+	padding: 0;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container:hover {
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.512);
+	transform: translateY(-0.7em);
+	box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+	color: #fff;
+	position: relative;
+	padding: 10px;
+}
+
+.form-control {
+	border: 2px solid rgba(0, 0, 0, 0.365);
+	border-radius: 40px;
+	padding: 20px 40px 20px 20px;
+}
+
+.bx {
+	color: #1d2023d8;
+	position: absolute;
+	/* margin: 0; */
+	right: 25px;
+	transform: translateY(-50%);
+	top: 50%;
+	font-size: 25px;
+}
+
+
+.btn {
+	width: 95%;
+	padding: 10px;
+	position: relative;
+	margin: 0 10px;
+	color: #fff;
+	background-color: #1d2023;
+	border: 2px solid rgba(255, 255, 255, 0.585);
+	text-decoration: none;
+	border-radius: 40px;
+	transition: 0.4s ease-in-out all;
+}
+
+.btn:hover {
+	border-radius: 5px;
+	background-color: #070809;
+	color: #fff;
+}
+
+footer {
+	width: 100%;
+    position: relative;
+    top: 100px;
+    background-color: #1d2023;
+    border-top: 1px solid #ffffff67;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}

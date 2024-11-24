@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to top, #171a1d, rgb(181 227 229));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+}
+/* Navbar */
+.navbar, .navbar-dark{
+	width: 100%;
+	padding: 1rem;
+	position: relative;
+	background-color: #1d2023;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.navbar .logo h1 {
+	color: white;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.text-center {
+	margin: 30px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.movie-card {
+	background-color: #ede6da;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+	width: 40vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transition: 0.3s ease-in-out all;
+}
+
+.btn-primary {
+	position: relative;
+	bottom: 20px;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-size: 24px;
+}
+
+.movie-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 15px 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-poster {
+	width: 40vw;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px 8px 0 0;
+}
+
+.movie-details, .booking-details {
+	flex-grow: 1; /* Makes the details area fill the remaining card space */
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* Spreads elements evenly */
+	text-align: center;
+}
+
+.booking-details {
+	font-size: 20px;
+	margin: 0px;
+}
+
+.booking-details p span, .btn-primary span {
+	position: relative;
+	top: 3px;
+}
+
+footer {
+	width: 100%;
+	background-color: #1d2023;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	border-top: 1px solid #ffffff67;
+}

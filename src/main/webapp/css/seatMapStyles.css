@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: linear-gradient(to top, #171a1d, rgb(181 227 229));
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 0;
+    background-color: #1d2023;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+
+.container {
+    position: relative;
+    margin: 40px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Movie Details Section */
+.movie-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.details h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.movie-poster {
+    width: 30vw;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.poster img {
+    width: 30vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-info {
+    color: #444;
+}
+
+.movie-info h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Screen Styling */
+.screen {
+    display: flex;
+    width: 100%;
+    padding-top: 8.5%;
+    background-image: url('../img/screen.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    color: grey;
+    margin-top: 8%;
+}
+
+.screen p {
+    position: absolute;
+}
+
+/* Seat Sections */
+.seat-section {
+    margin-top: 10%;
+}
+
+.seat-section h3 {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #444;
+    text-align: center;
+}
+
+/* Seat Grid Styles */
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 3.9%);
+    /* 20 seats per row */
+    gap: 1vw;
+    justify-content: start;
+    align-content: start;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Seat Styling */
+.seat {
+    width: 3vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #8080ff;
+    font-size: 0.7em;
+}
+
+.seat:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.seat.selected {
+    background-color: #4caf50;
+    color: white;
+}
+
+.seat.booked {
+    background-color: #ff4b5c;
+    color: white;
+    cursor: not-allowed;
+}
+
+/* Legend */
+.legend {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    margin: 40px 0;
+    border-radius: 5px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #555;
+    margin: 5px 10px;
+}
+
+.legend-item .seat {
+    margin-right: 8px;
+}
+
+/* Button Styles */
+.button {
+	width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out all;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #2677ce;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.button:disabled {
+    /*background-color: #6c757d;*/
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    border-top: 1px solid #ffffff67;
+    background-color: #1d2023;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}

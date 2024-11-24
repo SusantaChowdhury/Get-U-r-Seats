@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+/* style.css */
+body {
+	background-image: linear-gradient(to top, #171a1d, rgb(181 227 229));
+}
+
+/* General styling for the navbar */
+.navbar, .navbar-dark {
+	width: 100%;
+	position: relative;
+	background-color: #1d2023;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.navbar .logo h1 {
+	color: white;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+/* Styling for the movie cards container */
+.movie-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* Centers the cards in the row */
+	gap: 20px;
+	/* Adds spacing between cards */
+	padding: 20px;
+}
+
+/* Styling for individual movie cards */
+.movie-card {
+	background-color: #ffffff;
+	/* White card background */
+	border: 1px solid #e0e0e0;
+	/* Light gray border */
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.5);
+	/* Subtle shadow for depth */
+	max-width: 280px;
+	/* Fixed width for consistency */
+	height: 550px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+	transform: scale(1.03);
+	/* Slight zoom-in on hover */
+	box-shadow: 0 6px 13px 6px rgba(0, 0, 0, 0.3);
+	/* Enhanced shadow on hover */
+}
+
+/* Image styling for better fit */
+.movie-image {
+	width: 100%;
+	height: 60%;
+	/* Fixed height for uniformity */
+	object-fit: cover;
+	/* Crops to fit perfectly */
+	border-bottom: 1px solid #e0e0e0;
+	/* Separation between image and content */
+}
+
+/* Card content styling */
+.movie-card .card-body {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.movie-card h5 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	/* Dark text */
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.movie-card p {
+	font-size: 14px;
+	color: #666;
+	/* Subtle text for details */
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/* Button styling */
+.movie-card button {
+	background-color: #007bff;
+	/* Bootstrap primary color */
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.movie-card button:hover {
+	background-color: #0056b3;
+	/* Darker blue on hover */
+	transform: scale(1.05);
+	/* Slight enlargement on hover */
+}
+
+/* Footer styling */
+footer {
+	background-color: #1d2023;
+	/* Matches the navbar */
+	color: #f8f9fa;
+	/* White text */
+	text-align: center;
+	padding: 15px 0;
+	font-size: 14px;
+	margin-top: 30px;
+	border-top: 1px solid #ffffff67;
+}
+
+/* Styling for container margins */
+.container {
+	margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+    .row-cols-lg-3>* {
+        flex: 0 0 auto;
+        width: 22%;
+        margin: 10px;
+    }
+}
+
+@media ( max-width : 992px) {
+	/* Adjust for smaller screens */
+	.col {
+		flex: 0 0 calc(50% - 20px);
+		max-width: calc(50% - 20px);
+		width: 20%;
+		margin-bottom: 20px;
+	}
+}
+
